@@ -28,7 +28,7 @@ const ProductList = ({ cart, setCart }) => {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       {mockProducts.map((product) => (
         <div key={product.id} className="bg-white p-4 rounded shadow">
           <img src={product.image} alt={product.name} className="w-full h-40 object-cover mb-2" />
